@@ -6,4 +6,5 @@ services:
     image:   jenkinsci/blueocean:1.23.2-bcc31d32159f
     restart: always
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
       - ./volumes/jenkins:/var/jenkins/HOME
